@@ -1,0 +1,33 @@
+.badge-element{
+    position: relative;   
+    border: var(--white-color) 1px solid;
+    border-radius: 20%; 
+    padding: 0.5rem;
+}
+
+.badge-red{
+    background-color: var(--red-color);
+}
+
+.badge-icon {
+    border-radius: 50%;
+    border: var(--white-color) 1px solid; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1px 5px;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    left: 100%; 
+    top: -0.1em;   
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.icon{
+    color: var(--grey-color);
+}
+
+.icon:hover{
+    color:var(--white-color);
+}

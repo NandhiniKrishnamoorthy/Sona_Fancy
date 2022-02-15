@@ -1,0 +1,18 @@
+.button-main{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    /* font-size: 1vw; */
+}
+
+.primary-button {    
+    background-color: var(--black-color);
+    color: var(--grey-color);
+    border: var(--white-color) 1px solid;
+}
+
+.primary-button:hover{
+    color: var(--white-color);
+}
