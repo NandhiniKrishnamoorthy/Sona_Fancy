@@ -1,8 +1,7 @@
 .button-main{
     padding: 5px 10px 5px 10px;
     border-radius: 10px;    
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 0rem;
     font-weight: bold;
     /* font-size: 1vw; */
 }
