@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+@import "../homepage/style/header.css";
+@import "../homepage/style/footer.css";
+@import "../homepage/style/badge.css";
+@import "../homepage/style/container.css";
+@import "../css/button.css";
+@import "../variable.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+body{
+    font-size: calc(0.75em + 1vmin);
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+@media screen and (min-width: 900px) {
+    div.card_resize{
+        height:450px;
+    }
+     div.home_main_content {
+      font-size: 40px;
+    }
+  }
+  
+@media screen and (max-width: 850px) {
+    div.card_resize{
+        width:150px;
+        height:250px;        
+    }
+    div.home_main_content {
+        font-size: 20px;
+    }
+}

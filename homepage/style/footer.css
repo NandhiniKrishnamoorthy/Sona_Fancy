@@ -1,0 +1,19 @@
+.list_style{
+    list-style: none;
+    line-height: 1.75rem;
+    /* font-size: 1.25rem; */
+    color: var(--grey-color);
+    margin:auto;
+}
+
+header li:hover,
+footer a:hover{
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.list_inline{
+    display: inline;
+}
+
+
