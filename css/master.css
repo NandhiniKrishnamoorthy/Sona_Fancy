@@ -6,6 +6,7 @@
 @import "../css/button.css";
 @import "../variable.css";
 @import "../product-list/products_container.css";
+@import "../wishlist/wishlist.css";
 
 *{
     box-sizing: border-box;

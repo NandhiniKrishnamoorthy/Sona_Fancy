@@ -1,0 +1,7 @@
+.wishlist_color{
+    color: var(--red-color);
+}
+
+.wishlist_content{
+    color: var(--white-color);
+}
