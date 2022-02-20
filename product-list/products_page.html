@@ -1,0 +1,280 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script src="https://kit.fontawesome.com/c2fdf537fc.js"
+                crossorigin="anonymous"></script>
+        <title>sona fancy</title>
+        <!-- favicon -->
+        <link rel="icon" href="https://img.icons8.com/flat-round/64/000000/crown--v1.png"/>
+        <!-- style 10 component library -->
+        <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/padding.css" />
+        <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/margin.css" />
+        <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/typography.css" />
+        <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/card.css" />
+        <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/ratings.css" />
+        <!-- custom stylesheet -->
+        <link rel="stylesheet" href="../css/master.css"/>
+    </head>
+    <body>
+        <!------------------- header -------------------->
+        <header class="nav-bar py-1 px-2">
+            <div class="nav-flex">
+                <a href="../home.html"><span class="nav-flex brand-logo cursor-pointer">
+                    <img src="https://img.icons8.com/flat-round/64/000000/crown--v1.png" alt="logo" class="image-logo" />  
+                    <span class="brand_name">Sona Fancy</span> 
+                </span>  
+                </a>  
+                <form class="nav-flex overflow">
+                    <input placeholder="search" class="search-textbox">
+                    <button class="search-button cursor-pointer"><a><i class="fa fa-search fa-2x"></a></i></button>
+                    </form>
+                
+                <div class="nav-flex header-icon ml-1">
+                    <a>
+                        <div class="badge-element mr-1 cursor-pointer">
+                            <i class="fas fa-heart icon"></i>
+                            <span class="badge-icon badge-red">0</span>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="badge-element cursor-pointer">
+                            <i class="fas fa-shopping-cart icon"></i>
+                            <span class="badge-icon badge-red">0</span>
+                        </div>
+                    </a>
+                    <a>
+                        <div class="ml-1 badge-element cursor-pointer">
+                            <i class="fas fa-user-circle icon"></i>
+                        </div>
+                    </a>
+                    <!-- <button class="button-main primary-button mx-2 mr-2 cursor-pointer">Login</button> -->
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <ul class=" list_style py-1">
+                   <a href="../home.html"><li class="list_inline px-1">Home</li></a>
+                   <a><li class="list_inline px-1">Earrings</li></a>
+                    <a><li class="list_inline px-1">Neck Wear</li></a>
+                    <a><li class="list_inline px-1">Bangles</li></a>
+                    <a><li class="list_inline px-1">Others</li></a>
+                </ul>
+            </div>
+        </header>
+    <main class="main">
+        <section>  
+                <div class="flex sort_filter">
+                    <div><a class="m-auto" onclick="showhide_filters()">
+                        <button class="filter_style">Filters</button>
+                        </a>
+                       <select class="ml-3 filter_style" name="Price">
+                        <option value="Sort By" selected>Sort By</option>
+                        <option value="Price, Low to High">Price, Low to High</option>
+                        <option value="Price, High to Low">Price, High to Low</option>
+                        </select> </div>                  
+                </div>
+                <div id="filter_container">
+                    <div class="flex py-1">
+                        <div class="text-bold ml-1">Price
+                            <form>
+                                <button class="price_button">&lt; 500</button>
+                                <button class="price_button">501 to 1000</button>
+                                <button class="price_button">1001 to 1500</button>
+                                <button class="price_button">1501 to 2000</button>
+                                <button class="price_button">&gt; 2000 </button>
+                            </form>
+                        </div>
+                        <div class="text-bold ml-2">Category
+                            <form class="container_flex_col">
+                                <input type="checkbox" value="earrings" name="category1" id="category1">
+                                <label for="category1">Earrings</label><br>
+                                <input type="checkbox" value="neckwear" name="category2" id="category2">
+                                <label for="category2">NeckWear</label><br>
+                                <input type="checkbox" value="Bangles" name="category3" id="category3">
+                                <label for="category3">Bangles</label><br>
+                            </form>
+                        </div>
+                        <div class="text-bold ml-2 mr-1">Ratings
+                            <form>
+                                <input type="radio" id="4 stars & above" value="4 stars & above" name="ratings">
+                                <label for="4 stars & above">4 stars & above</label><br>
+                                <input type="radio" id="3 stars & above" value="3 stars & above" name="ratings">
+                                <label for="3 stars & above">3 stars & above</label><br>
+                                <input type="radio" id="2 stars & above" value="2 stars & above" name="ratings">
+                                <label for="2 stars & above">2 stars & above</label><br>
+                                <input type="radio" id="1 stars & above" value="1 stars & above" name="ratings">
+                                <label for="1 stars & above">1 stars & above</label><br>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+            
+            <div class="show_products_text ml-2 text-bold">Showing All Products</div>
+            <div  class="flex py-1 m-auto container_size">
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Lakshmi Choker" src="../images/neckwear_card1.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Lakshmi Choker
+                            </div>
+                            <div>
+                                Rs. 1800
+                            </div> 
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>                                     
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">                        
+                        <img class="main_img card_img_resize" alt="Flower Kangan" src="../images/bangle_card9.jpg" />
+                        <span class="card-badge">New</span>
+                        <div class="card_desc text-center">
+                            <div>
+                                Flower Kangan
+                            </div>
+                            <div>
+                                Rs. 2000
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Antique Haram" src="../images/neckwear_card2.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Antique Haram
+                            </div>
+                            <div>
+                                Rs. 2200
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Antique Bangle" src="../images/bangle_card10.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Antique Bangle
+                            </div>                                
+                            <div>
+                                Rs. 1500
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>   
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>                  
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Lakshmi Jhumka" src="../images/earring_card5.jpg" />
+                        <span class="card-badge">New</span>
+                        <div class="card_desc text-center">
+                            <div>
+                                Lakshmi Jhumka
+                            </div>
+                            <div>
+                                Rs. 1000
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Pearl with Stone" src="../images/neckwear_card3.jpg" />
+                        <span class="card-badge">New</span>
+                        <div class="card_desc text-center">
+                            <div>
+                                Pearl with Stone
+                            </div>
+                            <div>
+                                Rs. 1000
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Ring Jhumka" src="../images/earring_card6.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Ring Jhumka
+                            </div>                                
+                            <div>
+                                Rs. 700
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Sprial white stone" src="../images/earring_card7.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Sprial white stone
+                            </div>
+                            <div>
+                                Rs. 1500 
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <a  class="button_on_card">VIEW</a>
+                    </div>
+                    <div class="card_main card_resize">                        
+                        <img class="main_img card_img_resize" alt="Pearl with Kemp" src="../images/neckwear_card4.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Pearl Choker
+                            </div>                                
+                            <div>
+                                Rs. 700
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>                       
+                        <div class="card-overlay text-bold">Sold Out</div>
+                    </div>
+                    <div class="card_main card_resize">
+                        <img class="main_img card_img_resize" alt="Pearl with Kemp" src="../images/earring_card8.jpg" />
+                        <div class="card_desc text-center">
+                            <div>
+                                Pearl with Kemp
+                            </div>
+                            <div>
+                                Rs. 500 
+                            </div>
+                            <button class="add_to_cart">Add to Cart</button>
+                        </div>
+                        <button class="add_to_wishlist"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
+                        <div class="card-overlay text-bold">Sold Out</div>
+                    </div>
+                </div>
+            </section>
+        </main>        
+        <footer class="nav-bar py-1 m0">
+            <div class="flex">
+            <div class="list_style">
+                <li><a>About Us</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>Return & Refund policy</a></li>
+                <li><a>FAQs</a></li>
+            </div>
+            <div class="list_style">
+                <div>FOLLOW US</div>
+                <li class="list_inline"><a class="pr-1"><i class="fab fa-twitter"></i></a></li>
+                <li class="list_inline"><a class="pr-1"><i class="fab fa-github"></i></a></li>
+                <li class="list_inline"><a><i class="fab fa-linkedin"></i></a></li>
+            </div>
+            </div>
+        </footer>
+        <script src="./filters.js" type="text/javascript"></script>
+    </body>
+</html>
