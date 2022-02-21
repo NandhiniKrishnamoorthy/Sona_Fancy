@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- font awesome icons -->
+    <!-- <script src="https://kit.fontawesome.com/c2fdf537fc.js"
+            crossorigin="anonymous"></script> -->
+    <title>sona fancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- favicon -->
+    <link rel="icon" href="https://img.icons8.com/flat-round/64/000000/crown--v1.png"/>
+    
+    <!-- style 10 component library -->
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/padding.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/margin.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/typography.css" />    
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/input.css" />
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="../css/master.css"/>
+</head>
+<body>
+    <header class="nav-bar py-1 px-2">
+        <div class="nav-flex">
+            <a href="../home.html"><span class="nav-flex brand-logo cursor-pointer">
+                <img src="https://img.icons8.com/flat-round/64/000000/crown--v1.png" alt="logo" class="image-logo" />  
+                <span class="brand_name">Sona Fancy</span> 
+            </span>  
+            </a>  
+            <form class="nav-flex overflow">
+                <input placeholder="search" class="search-textbox">
+                <button class="search-button cursor-pointer"><a><i class="fa fa-search fa-2x"></a></i></button>
+                </form>
+            
+            <div class="nav-flex header-icon ml-1">
+                <a href="../wishlist/wishlist.html">
+                    <div class="badge-element mr-1 cursor-pointer">
+                        <i class="fas fa-heart icon"></i>
+                        <span class="badge-icon badge-red">4</span>
+                    </div>
+                </a>
+                <a href="../Cart_management/cartlist.html">
+                    <div class="badge-element cursor-pointer">
+                        <i class="fas fa-shopping-cart icon"></i>
+                        <span class="badge-icon badge-red">2</span>
+                    </div>
+                </a>
+                <a href="../authentication/login.html">
+                    <div class="ml-1 badge-element cursor-pointer">
+                        <i class="fas fa-user-circle icon"></i>
+                    </div>
+                </a>
+                <!-- <button class="button-main primary-button mx-2 mr-2 cursor-pointer">Login</button> -->
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <ul class=" list_style py-1">
+               <a href="../home.html"><li class="list_inline px-1">Home</li></a>
+               <a><li class="list_inline px-1">Earrings</li></a>
+                <a><li class="list_inline px-1">Neck Wear</li></a>
+                <a><li class="list_inline px-1">Bangles</li></a>
+                <a><li class="list_inline px-1">Others</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <form class="login-form">    
+        <p class="text-bold text-s mb-1">Sign Up</p>    
+        <div class="text-left">
+            <label for="email" class="form-label">Email</label>
+            <input placeholder="nandhini@gmail.com" type="email" class="user-input">
+            <label for="password" class="form-label">Password</label>
+            <input placeholder="password" type="password" class="user-input password-input text-bold" required>  
+            <label for="password" class="form-label">Confirm Password</label>
+            <input placeholder="password" type="password" class="user-input password-input text-bold" required>          
+        </div>    
+        <div class="nav-flex">
+            <span><input type="checkbox" name="remember_me">
+            <label>Accept all Terms & Conditions</label></span>            
+        </div>    
+        <button class="order_button mt-1">Create new account</button><br>
+        <div  class="mt-1"><a href="../authentication/login.html" class="a_style">Already have an account > </a></div>
+    </form>
+
+    <footer class="nav-bar py-1 m0">
+        <div class="flex">
+        <div class="list_style">
+            <li><a>About Us</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>Return & Refund policy</a></li>
+            <li><a>FAQs</a></li>
+        </div>
+        <div class="list_style">
+            <div>FOLLOW US</div>
+            <li class="list_inline"><a class="pr-1"><i class="fab fa-twitter"></i></a></li>
+            <li class="list_inline"><a class="pr-1"><i class="fab fa-github"></i></a></li>
+            <li class="list_inline"><a><i class="fab fa-linkedin"></i></a></li>
+        </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,14 @@
+.a_style{
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.user-input{
+    width:100%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.login-form{
+    width:20rem;
+}
