@@ -1,0 +1,90 @@
+.card-desc-horizontal{
+    padding-top: 0rem;
+    padding-left:55%;
+}
+
+.rating-container{
+    padding: 0rem;
+    border:none;
+}
+
+.card-horizontal{
+    padding:5% 0%;  
+    height:100%;     
+    width:50%;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_03{
+    width:max-content;
+    height:350px;
+}
+
+.text1-on-card{
+    z-index: 1;
+}
+
+.quantity{
+    border-radius: 50%;
+    border: thin solid 1px var(--white-color);
+    padding:0.25rem;
+}
+
+.item_quantity{
+    width:3rem;
+    color:var(--black-color);
+    padding:0rem 0.5rem;
+    font-weight:bold;
+    text-align: center;
+    font-size:1rem;
+    outline:none;
+    border:none;
+}
+
+.mt-0p5{
+    margin-top:0.5rem;
+}
+
+.container_text_color{
+    color:var(--white-color);
+}
+
+.flex_space_even{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price_table{
+    height:max-content;
+    border: var(--white-color) 1px solid;
+    padding:1rem;
+    line-height: 2.5rem;
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--lightgrey-color); */
+}
+
+.order_button{
+    background-color: var(--order-button);
+    padding: 0.5rem;
+    font-weight:bold;
+    border-radius:2rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    width:60%;
+}
+
+.order_button:hover{
+    background-color: var(--aqua-color);
+}
