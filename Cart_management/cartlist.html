@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- font awesome icons -->
+    <!-- <script src="https://kit.fontawesome.com/c2fdf537fc.js"
+            crossorigin="anonymous"></script> -->
+    <title>sona fancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- favicon -->
+    <link rel="icon" href="https://img.icons8.com/flat-round/64/000000/crown--v1.png"/>
+    
+    <!-- style 10 component library -->
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/padding.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/margin.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/typography.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/card.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/ratings.css" />
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="../css/master.css"/>
+</head>
+<body>
+    <header class="nav-bar py-1 px-2">
+        <div class="nav-flex">
+            <a href="../home.html"><span class="nav-flex brand-logo cursor-pointer">
+                <img src="https://img.icons8.com/flat-round/64/000000/crown--v1.png" alt="logo" class="image-logo" />  
+                <span class="brand_name">Sona Fancy</span> 
+            </span>  
+            </a>  
+            <form class="nav-flex overflow">
+                <input placeholder="search" class="search-textbox">
+                <button class="search-button cursor-pointer"><a><i class="fa fa-search fa-2x"></a></i></button>
+                </form>
+            
+            <div class="nav-flex header-icon ml-1">
+                <a href="../wishlist/wishlist.html">
+                    <div class="badge-element mr-1 cursor-pointer">
+                        <i class="fas fa-heart icon"></i>
+                        <span class="badge-icon badge-red">4</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="badge-element cursor-pointer">
+                        <i class="fas fa-shopping-cart icon"></i>
+                        <span class="badge-icon badge-red">2</span>
+                    </div>
+                </a>
+                <a>
+                    <div class="ml-1 badge-element cursor-pointer">
+                        <i class="fas fa-user-circle icon"></i>
+                    </div>
+                </a>
+                <!-- <button class="button-main primary-button mx-2 mr-2 cursor-pointer">Login</button> -->
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <ul class=" list_style py-1">
+               <a href="../home.html"><li class="list_inline px-1">Home</li></a>
+               <a><li class="list_inline px-1">Earrings</li></a>
+                <a><li class="list_inline px-1">Neck Wear</li></a>
+                <a><li class="list_inline px-1">Bangles</li></a>
+                <a><li class="list_inline px-1">Others</li></a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="wishlist_content text-center text-bold my-2">My Cart (2 items)</div>
+            <div class="flex_space_even">
+                <ul class="container-flex-col">
+                    <li>
+                        <div class="card_03">
+                            <img class="card-horizontal" src="../images/neckwear_card1.jpg" />
+                            <div class="text1-on-card">VIEW</div>
+                            <div class="flex_col card-desc-horizontal">
+                                <div class="pt-1">
+                                    Lakshmi Haram
+                                </div>
+                                <div class="card-deal">Deal of the day</div>
+                                <div class="py-1">
+                                    Rs. 2200<span class="card-price-discount">2500</span>
+                                </div>
+                                <fieldset class="rating-container">
+                                    <span class="rating-icon">
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star non-filled-rating"></i>            
+                                    </span>  <br>
+                                    <span class="text-xxs">4505 ratings | 809 reviews</span>
+                                </fieldset>
+                                <div class="flex mt-1">
+                                    <button class="quantity mr-1"><i class="fas fa-minus"></i></button>
+                                    <input class="item_quantity mr-1" type="number" value="1" min="1">
+                                    <button class="quantity"><i class="fas fa-plus"></i></button> 
+                                </div>
+                                <button class="add_to_cart mt-1">Remove from Cart</button>
+                                <button class="add_to_cart mt-0p5">Move to Wishlist</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_03">
+                            <img class="card-horizontal" src="../images/neckwear_card2.jpg" />
+                            <div class="text1-on-card">VIEW</div>
+                            <div class="flex_col card-desc-horizontal">
+                                <div class="pt-1">
+                                    Antique Choker
+                                </div>                        
+                                <div class="py-1">
+                                    Rs. 2200<span class="card-price-discount">2500</span>
+                                </div>
+                                <fieldset class="rating-container">
+                                    <span class="rating-icon">
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star filled-rating"></i>
+                                    <i class="fas fa-star non-filled-rating"></i>
+                                    <i class="fas fa-star non-filled-rating"></i>            
+                                    </span>  <br>
+                                    <span class="text-xxs">3004 ratings | 405 reviews</span>
+                                </fieldset>
+                                <div class="flex mt-1">
+                                    <button class="quantity mr-1"><i class="fas fa-minus"></i></button>
+                                    <input class="item_quantity mr-1" type="number" value="1" min="1">
+                                    <button class="quantity"><i class="fas fa-plus"></i></button> 
+                                </div>
+                                <button class="add_to_cart mt-1">Remove from Cart</button>
+                                <button class="add_to_cart mt-0p5">Move to Wishlist</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container_text_color price_table mx-3">
+                    <h3>PRICE DETAILS</h3>
+                    <hr>
+                    <div class="nav-flex">
+                        <span>Price (2 items)</span>
+                        <span>₹5000</span>
+                    </div>
+                    <div class="nav-flex">
+                        <span>Discount</span>
+                        <span>₹600</span>
+                    </div>
+                    <div class="nav-flex">
+                        <span>Delivery Charges</span>
+                        <span>₹100</span>
+                    </div>
+                    <hr>
+                    <div class="text-bold nav-flex">
+                        <span>Total Amount</span>
+                        <span>₹4400</span>
+                    </div>
+                    <hr>
+                    <div>You will save ₹600 on this order</div>
+                    <div class="text-center">
+                        <button class="order_button">Place your order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="nav-bar py-1 m0">
+        <div class="flex">
+        <div class="list_style">
+            <li><a>About Us</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>Return & Refund policy</a></li>
+            <li><a>FAQs</a></li>
+        </div>
+        <div class="list_style">
+            <div>FOLLOW US</div>
+            <li class="list_inline"><a class="pr-1"><i class="fab fa-twitter"></i></a></li>
+            <li class="list_inline"><a class="pr-1"><i class="fab fa-github"></i></a></li>
+            <li class="list_inline"><a><i class="fab fa-linkedin"></i></a></li>
+        </div>
+        </div>
+    </footer>
+</body>
