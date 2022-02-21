@@ -8,6 +8,7 @@
 @import "../product-list/products_container.css";
 @import "../wishlist/wishlist.css";
 @import "../Cart_management/cartlist.css";
+@import "../authentication/auth.css";
 
 *{
     box-sizing: border-box;

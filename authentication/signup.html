@@ -17,9 +17,8 @@
     <!-- style 10 component library -->
     <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/padding.css" />
     <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/margin.css" />
-    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/typography.css" />
-    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/card.css" />
-    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/ratings.css" />
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/typography.css" />    
+    <link rel="stylesheet"  href="https://styles-10-rating.netlify.app/css/input.css" />
 
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="../css/master.css"/>
@@ -69,71 +68,25 @@
             </ul>
         </div>
     </header>
-    <main>
-        <section>
-            <div class="wishlist_content text-center text-bold my-1">My Wishlist</div>
-            <div  class="flex py-1 m-auto container_size">
-                <div class="card_main card_resize">
-                    <img class="main_img card_img_resize" alt="Lakshmi Choker" src="../images/neckwear_card1.jpg" />
-                    <div class="card_desc text-center">
-                        <div>
-                            Lakshmi Choker
-                        </div>
-                        <div>
-                            Rs. 1800
-                        </div> 
-                        <button class="add_to_cart">Move to Cart</button>
-                    </div>
-                    <button class="add_to_wishlist wishlist_color" onclick="wishlist_style()"><i class="fas fa-heart"></i></button>                                     
-                    <a  class="button_on_card">VIEW</a>
-                </div>
-                <div class="card_main card_resize">                        
-                    <img class="main_img card_img_resize" alt="Flower Kangan" src="../images/bangle_card9.jpg" />
-                    <!-- <span class="card-badge">New</span> -->
-                    <div class="card_desc text-center">
-                        <div>
-                            Flower Kangan
-                        </div>
-                        <div>
-                            Rs. 2000
-                        </div>
-                        <button class="add_to_cart">Move to Cart</button>
-                    </div>
-                    <button class="add_to_wishlist wishlist_color"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
-                    <a  class="button_on_card">VIEW</a>
-                </div>
-                <div class="card_main card_resize">
-                    <img class="main_img card_img_resize" alt="Antique Haram" src="../images/neckwear_card2.jpg" />
-                    <div class="card_desc text-center">
-                        <div>
-                            Antique Haram
-                        </div>
-                        <div>
-                            Rs. 2200
-                        </div>
-                        <button class="add_to_cart">Move to Cart</button>
-                    </div>
-                    <button class="add_to_wishlist wishlist_color"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>
-                    <a  class="button_on_card">VIEW</a>
-                </div>
-                <div class="card_main card_resize">
-                    <img class="main_img card_img_resize" alt="Antique Bangle" src="../images/bangle_card10.jpg" />
-                    <div class="card_desc text-center">
-                        <div>
-                            Antique Bangle
-                        </div>                                
-                        <div>
-                            Rs. 1500
-                        </div>
-                        <button class="add_to_cart">Move to Cart</button>
-                    </div>   
-                    <button class="add_to_wishlist wishlist_color"  onclick="wishlist_style()"><i class="fas fa-heart"></i></button>                  
-                    <a  class="button_on_card">VIEW</a>
-                </div>
-                
-            </div>
-        </section>
-    </main>
+
+    <form class="login-form">    
+        <p class="text-bold text-s mb-1">Sign Up</p>    
+        <div class="text-left">
+            <label for="email" class="form-label">Email</label>
+            <input placeholder="nandhini@gmail.com" type="email" class="user-input">
+            <label for="password" class="form-label">Password</label>
+            <input placeholder="password" type="password" class="user-input password-input text-bold" required>  
+            <label for="password" class="form-label">Confirm Password</label>
+            <input placeholder="password" type="password" class="user-input password-input text-bold" required>          
+        </div>    
+        <div class="nav-flex">
+            <span><input type="checkbox" name="remember_me">
+            <label>Accept all Terms & Conditions</label></span>            
+        </div>    
+        <button class="order_button mt-1">Create new account</button><br>
+        <div  class="mt-1"><a href="../authentication/login.html" class="a_style">Already have an account > </a></div>
+    </form>
+
     <footer class="nav-bar py-1 m0">
         <div class="flex">
         <div class="list_style">
