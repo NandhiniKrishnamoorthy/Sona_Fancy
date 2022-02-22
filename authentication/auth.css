@@ -12,3 +12,13 @@
 .login-form{
     width:20rem;
 }
+
+.password_container{
+    position: relative;
+}
+
+.showHide_password{
+    position:absolute;
+    left:90%;
+    top:20%;
+}
